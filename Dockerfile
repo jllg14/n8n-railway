@@ -3,5 +3,6 @@ FROM n8nio/n8n
 ENV N8N_BASIC_AUTH_ACTIVE=true
 ENV N8N_BASIC_AUTH_USER=admin
 ENV N8N_BASIC_AUTH_PASSWORD=admin123
+ENV WEBHOOK_URL=https://n8n-railway-production-0801.up.railway.app/
 
 EXPOSE 5678
