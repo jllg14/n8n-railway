@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   n8n:
-    image: n8nio/n8n:1.88.0
+    image: n8nio/n8n:latest  # Sempre usarà la darrera versió estable
     restart: always
     ports:
       - "5678:5678"
@@ -13,4 +13,5 @@ services:
       - N8N_HOST=0.0.0.0
       - N8N_PORT=5678
     volumes:
-      - ~/.n8n:/home/node/.n8n
+      - /home/node/.n8n  # Aquest serà el volum de Railway (no cal especificar res local)
+
